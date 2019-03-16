@@ -1,0 +1,28 @@
+* {  
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  text-align: center;
+  padding: 5%;  
+}
+
+.note {  
+  min-height: 2rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: italic;
+  text-align: left;  
+  margin: 1.5rem;      
+}
+
+.note p {
+  margin: 0px;
+  font-size: 1.2rem;
+}
