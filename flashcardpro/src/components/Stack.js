@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import Card from './Card'
 
 class Stack extends Component {
-  render() {
+  render() {    
     const { title, cards } = this.props.stack;    
     return (
       <div>
-        <Link to='/'>
-          Home
+        <Link to='/' className='link-home'>
+        <h4>Home</h4>          
         </Link>
         <h3>{title}</h3>     
         <br/>        {

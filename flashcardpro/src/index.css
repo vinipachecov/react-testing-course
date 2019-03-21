@@ -1,0 +1,61 @@
+body {
+  padding: 5%;
+  text-align: center;
+}
+
+.link-home {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 10px;
+  min-height: 50px;
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;  
+}
+
+.card-prompt {    
+}
+
+/* using transitions */
+/* .answer-revealed {
+  opacity: 1;  
+  transition: opacity 200ms ease-out;
+}
+
+.answer-hidden {
+  opacity: 0;  
+} */
+
+
+.answer-revealed {
+  visibility: visible;
+  animation-name: fade-in;
+  animation-duration: 500ms;
+}
+
+.answer-hidden {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
