@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
 import { StackActions } from '../actions'
 
-class StackForm extends Component {
+export class StackForm extends Component {
 
   constructor() {
     super();
@@ -33,7 +33,6 @@ class StackForm extends Component {
   onAddStack() {
     console.log(this.state);
     this.props.addStack(this.state);
-
   }
 
   render() {    

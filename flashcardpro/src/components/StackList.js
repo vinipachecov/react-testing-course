@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import stacks from '../data/stacks.json';
 import { StackActions } from '../actions/index'
 
-class StackList extends Component {
+export class StackList extends Component {
 
   componentDidMount() {
     // prevent reloading the stack everytime the page is visited

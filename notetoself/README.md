@@ -45,3 +45,12 @@ import Adapter from 'enzyme-adapter-react-16';
  
 configure({ adapter: new Adapter(), disableLifecycleMethods: true });
 ```
+
+## Using enzyme
+
+Enzyme helps us manipulating components to be isolately rendered and to check its status. Functions to keep in mind:
+
+* debug - shows the current status of the component
+* find - finds all elements (classes or element tags) given a parameter
+* exists - given a specific result, to check if it exists in a component
+* at - when using find, you will have all elements that match the parameter given. At will help you access a specific index of that.

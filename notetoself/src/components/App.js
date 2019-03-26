@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, FormControl, Button } from 'react-bootstrap';
 import Note from './Note'
 import { bake_cookie, delete_cookie, read_cookie } from 'sfcookies';
-import './index.css'
+
 
 
 const cookie_key = 'NOTES';
@@ -24,7 +24,7 @@ class App extends Component {
 
   submit() {  
     const notes = [...this.state.notes];
-    notes.push(this.state.text);    
+    notes.push({text: this.state.text});    
     this.setState({
       notes
     });
