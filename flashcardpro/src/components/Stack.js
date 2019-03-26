@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Card from './Card'
 
-export class Stack extends Component {
-  render() {    
-    const { title, cards } = this.props.stack;    
+export const Stack = (props) => {  
+    const { title, cards } = props.stack;    
     return (
       <div>
         <Link to='/' className='link-home'>
@@ -20,17 +19,9 @@ export class Stack extends Component {
           })
         }   
       </div>
-    )
-  }
-}
-
-const mapStateToProps = (state) => ({
-  stack: state.stackData
-});
-
-const mapDispatchToProps = {
-
+    )  
 }
 
 
-export default connect(mapStateToProps, null)(Stack);
+
+export default Stack;

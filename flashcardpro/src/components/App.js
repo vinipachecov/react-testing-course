@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import StackList from './StackList';
 
-class App extends Component {
-  render() {
+const App = () => {  
     return (
       <div>
         <h2>Flashcard Pro</h2>
@@ -16,8 +15,7 @@ class App extends Component {
             </h4>
           </Link>        
       </div>
-    )
-  }
+    )  
 }
 
 export default App;

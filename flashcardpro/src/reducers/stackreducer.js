@@ -7,8 +7,7 @@ const initialState = {
   title: ''
 }
 
-export default (state = initialState, action) => {
-  console.log(state, action)
+export default (state = initialState, action) => {  
   switch (action.type) {
   case actionTypes.SET_STACK:
     return { ...state, ...action.stack };
